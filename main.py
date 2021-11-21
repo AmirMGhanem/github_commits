@@ -27,7 +27,7 @@ def push_commit(YAML_FILE):
     origin = repo.remote('origin')
     origin.push()
 
-# git commit --date="10 day ago" -m "Your commit message"
+
 
 
 if __name__ == '__main__':
