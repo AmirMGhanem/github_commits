@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import yaml
 from git import Repo
 from tqdm import tqdm
@@ -17,15 +17,16 @@ def update_yaml_file():
     
 def push_commit(YAML_FILE):
     print('Commiting to repository...')
-
     for i in tqdm(range(int(9e6))):
         pass
     repo = Repo('.')  # if repo is CWD just do '.'
     Branch_Name = repo.active_branch.name
     repo.index.add([FILE_TO_COMMIT_NAME])
+    # repo.index.commit("commit"+str(past_date.strftime('%Y-%m-%d %H:%M:%S')),commit_date=past_date.strftime('%Y-%m-%d %H:%M:%S'))
     repo.index.commit(f'Amir Updated Branch - {Branch_Name} {YAML_FILE["UPDATE_TIMES"]} times. Last update was on {YAML_FILE["LAST_UPDATE"]}.')
     origin = repo.remote('origin')
     origin.push()
+    print('Done! :)')
 
 
 
