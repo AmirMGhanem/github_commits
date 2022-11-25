@@ -1,8 +1,8 @@
-# github_commiter
+# github_commiter :) 😁
+### using GitPython and Yaml Libraries 🎸
 
 
-
-## Installation
+## Installation ➕
 ``` bash
 pip install -r requirements.txt
 ```
@@ -25,7 +25,7 @@ git push -u origin main
 * run the python script [main.py]
 
 
-## if you want to push manually 
+## if you want to push manually 😅
 ### use the command below
 ``` bash
  git commit --date="21 nov 2021" -m "Your commit message"
