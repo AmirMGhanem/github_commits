@@ -34,7 +34,6 @@ git push -u origin main
 
 
 ### Linux
-
 I will be using `crontab`.
 
 1.  Open crontab with: `sudo crontab -e`
